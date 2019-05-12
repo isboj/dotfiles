@@ -1,0 +1,15 @@
+# 基本は github.com のレポジトリーを指定するだけ
+[[plugins]]
+repo = 'Shougo/dein.vim'
+
+# カラースキーム
+[[plugins]]
+repo = 'jacoborus/tender.vim'
+
+# ツリー型のファイル表示
+[[plugins]]
+repo = 'scrooloose/nerdtree'
+
+# Git操作
+[[plugins]]
+repo = 'tpope/vim-fugitive'
