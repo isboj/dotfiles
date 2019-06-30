@@ -1,6 +1,6 @@
 #!/bin/bash -eu
 
-declare -a info=($(./get_os_info.sh))
+declare -a info=($(./lib/get_os_info.sh))
 os=${info[0]}
 
 if [ ${os} = "ubuntu" ]; then
