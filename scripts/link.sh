@@ -4,13 +4,28 @@ set -u
 DOT_DIRECTORY="${HOME}/dotfiles"
 DOT_CONFIG_DIRECTORY=".config"
 
-echo "link home directory dotfiles"
+# Set ignore link directory and files
+ignore_list=(`cat ignore_link.txt|xargs`)
+echo "##This directory and files will ignore to link!.##"
+for ignore in ${ignore_list[@]}
+do
+    echo "${ignore}"
+done
+
+# Confirm to link
+# TODO: for文中で確認したほうが分かりやすいのでは
+read -p "Start Link? (y/N): " yn
+case "$yn" in [yY]*) ;; *) echo "abort." ; exit ;; esac
+
+# Link to dotfiles
+echo "##link home directory dotfiles##"
 cd ${DOT_DIRECTORY}
 for f in .??*
 do
-    #無視したいファイルやディレクトリ
-    [ "$f" = ".git" ] && continue
-    [ "$f" = ".config" ] && continue
+    # If ignore list contais dotfile to link
+    if `echo ${ignore_list[@]} | grep -q "$f"` ; then
+        continue
+    fi
     ln -snfv ${DOT_DIRECTORY}/${f} ${HOME}/${f}
 done
 

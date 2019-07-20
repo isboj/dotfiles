@@ -2,3 +2,5 @@
 
 */sessions/*.vim
 *.ssh-agent
+
+scripts/ignore_link.txt
