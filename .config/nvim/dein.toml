@@ -1,0 +1,33 @@
+# ### dein ###
+[[plugins]]
+repo = 'Shougo/dein.vim'
+# denite
+[[plugins]]
+repo = 'Shougo/denite.nvim'
+
+# ### 見た目 ###
+# カラースキーム
+[[plugins]]
+repo = 'gosukiwi/vim-atom-dark'
+# lightline
+[[plugins]]
+repo = 'itchyny/lightline.vim'
+
+# ### 操作 ###
+# ツリー型のファイル表示
+[[plugins]]
+repo = 'scrooloose/nerdtree'
+# 補完
+[[plugins]]
+repo = 'neoclide/coc.nvim'
+if = '''executable('node') && executable('yarn')'''
+build = './install.sh nightly'
+
+# ### Git関連 ###
+# Git操作
+[[plugins]]
+repo = 'tpope/vim-fugitive'
+# 差分表示
+[[plugins]]
+repo = 'airblade/vim-gitgutter'
+
