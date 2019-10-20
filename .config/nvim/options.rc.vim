@@ -2,7 +2,7 @@
  
 "==背景に関して(vimhybrid用に設定している箇所があるので注意)==
 syntax on
-colorscheme atom-dark-256
+colorscheme tender
  
 "==エディタ全般==
 "swapファイルを作らない
@@ -53,6 +53,8 @@ set confirm
 set hidden
 " 外部でファイルが変更された場合は読み直す
 set autoread
+" 反映されるまでの時間
+set updatetime=100
 
 "==検索設定==
 "大文字/小文字の区別なく検索する

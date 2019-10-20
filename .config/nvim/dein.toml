@@ -8,7 +8,7 @@ repo = 'Shougo/denite.nvim'
 # ### 見た目 ###
 # カラースキーム
 [[plugins]]
-repo = 'gosukiwi/vim-atom-dark'
+repo = 'jacoborus/tender.vim'
 # lightline
 [[plugins]]
 repo = 'itchyny/lightline.vim'
