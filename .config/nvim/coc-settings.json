@@ -14,7 +14,10 @@
             "InterpreterPath": "path/to/python",
             "DatabasePath": "path/to/MPLS/output/dir",
             "Version": "{python version}"
-          }
+         },
+         "cache": {
+           "directory": "/tmp/mpls"
+         }
         },
         "searchPaths": [
           "path/to/site-packages",
@@ -24,6 +27,16 @@
         "analysisUpdates": true,
         "traceLogging": true,
         "asyncStartup": true
+      }
+    },
+    "ccls": {
+      "command": "ccls",
+      "filetypes": ["c", "cpp", "objc", "objcpp"],
+      "rootPatterns": [".ccls", "compile_commands.json", ".vim/", ".git/", ".hg/"],
+      "initializationOptions": {
+        "cache": {
+          "directory": "/tmp/ccls"
+        }
       }
     }
   }
