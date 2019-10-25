@@ -9,3 +9,6 @@ nnoremap <S-Left>  <C-w><
 nnoremap <S-Right> <C-w>>
 nnoremap <S-Up>    <C-w>-
 nnoremap <S-Down>  <C-w>+
+
+" terminal mode
+tnoremap <silent> <ESC> <C-\><C-n>
