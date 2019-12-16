@@ -1,6 +1,6 @@
 # Alias
-eval `dircolors ~/.colorrc`
-alias ls='ls --color=auto'
+#eval `dircolors ~/.colorrc`
+#alias ls='ls --color=auto'
 
 # show git branch
 # https://github.com/git/git/blob/master/contrib/completion/git-prompt.sh
