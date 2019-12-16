@@ -12,6 +12,9 @@ repo = 'jacoborus/tender.vim'
 # lightline
 [[plugins]]
 repo = 'itchyny/lightline.vim'
+# Indent Guides
+[[plugins]]
+repo = 'nathanaelkane/vim-indent-guides'
 
 # ### 操作 ###
 # ツリー型のファイル表示
