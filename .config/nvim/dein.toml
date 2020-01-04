@@ -4,6 +4,11 @@ repo = 'Shougo/dein.vim'
 # denite
 [[plugins]]
 repo = 'Shougo/denite.nvim'
+# ### coc ###
+[[plugins]]
+repo = 'neoclide/coc.nvim'
+if = '''executable('node') && executable('yarn')'''
+build = './install.sh nightly'
 
 # ### 見た目 ###
 # カラースキーム
@@ -20,11 +25,9 @@ repo = 'nathanaelkane/vim-indent-guides'
 # ツリー型のファイル表示
 [[plugins]]
 repo = 'scrooloose/nerdtree'
-# 補完
+# 括弧補完
 [[plugins]]
-repo = 'neoclide/coc.nvim'
-if = '''executable('node') && executable('yarn')'''
-build = './install.sh nightly'
+repo = 'cohama/lexima.vim'
 
 # ### Git関連 ###
 # Git操作
