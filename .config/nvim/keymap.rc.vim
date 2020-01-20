@@ -13,6 +13,9 @@ nnoremap <S-Right> <C-w>>
 nnoremap <S-Up>    <C-w>-
 nnoremap <S-Down>  <C-w>+
 
+" 一つ前のファイルを開く
+nnoremap <silent> <leader>b :b #<Enter>
+
 " terminal mode
 tnoremap <silent> <ESC> <C-\><C-n>
 
