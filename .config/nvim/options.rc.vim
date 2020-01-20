@@ -63,3 +63,8 @@ set ignorecase
 set smartcase
 "検索時に最後まで行ったら最初に戻る
 set wrapscan
+
+"==その他==
+"jsx, tsxのファイルタイプを指定する
+autocmd BufRead,BufNewFile *.jsx set filetype=javascript.jsx
+autocmd BufRead,BufNewFile *.tsx set filetype=typescript.tsx
