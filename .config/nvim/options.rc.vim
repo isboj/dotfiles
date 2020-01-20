@@ -2,7 +2,7 @@
  
 "==背景に関して(vimhybrid用に設定している箇所があるので注意)==
 syntax on
-colorscheme tender
+colorscheme gruvbox
  
 "==エディタ全般==
 "swapファイルを作らない
