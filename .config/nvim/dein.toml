@@ -9,18 +9,20 @@ repo = 'Shougo/denite.nvim'
 repo = 'neoclide/coc.nvim'
 if = '''executable('node') && executable('yarn')'''
 build = './install.sh nightly'
+hook_add = '''source ~/.config/nvim/plugins/coc.vim'''
 
 # ### 見た目 ###
 # カラースキーム
 [[plugins]]
-#repo = 'jacoborus/tender.vim'
 repo = 'morhetz/gruvbox'
 # lightline
 [[plugins]]
 repo = 'itchyny/lightline.vim'
+hook_add = '''source ~/.config/nvim/plugins/lightline.vim'''
 # Indent Guides
 [[plugins]]
 repo = 'nathanaelkane/vim-indent-guides'
+hook_add = '''source ~/.config/nvim/plugins/vim-indent-guides.vim'''
 
 # ### 操作 ###
 # ツリー型のファイル表示
@@ -37,4 +39,5 @@ repo = 'tpope/vim-fugitive'
 # 差分表示
 [[plugins]]
 repo = 'airblade/vim-gitgutter'
+hook_add = '''source ~/.config/nvim/plugins/vim-gitgutter.vim'''
 

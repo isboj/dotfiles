@@ -1,9 +1,5 @@
 "===個人用vim設定ファイル===
  
-"==背景に関して(vimhybrid用に設定している箇所があるので注意)==
-syntax on
-colorscheme gruvbox
- 
 "==エディタ全般==
 "swapファイルを作らない
 set noswapfile
