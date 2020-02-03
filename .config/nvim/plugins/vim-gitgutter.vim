@@ -10,3 +10,11 @@ highlight GitGutterChange ctermfg=yellow guifg=darkyellow
 highlight GitGutterDelete ctermfg=red guifg=darkred
 highlight GitGutterChangeDelete ctermfg=yellow guifg=darkyellow
 
+" ### keymap ###
+" Hunkの移動
+nmap <Leader>hj <Plug>(GitGutterNextHunk)
+nmap <Leader>hk <Plug>(GitGutterPrevHunk)
+" Hunkのstage
+nmap <Leader>hs <Plug>(GitGutterStageHunk)
+" Hunkのundo(revert)
+nmap <Leader>hu <Plug>(GitGutterUndoHunk)
