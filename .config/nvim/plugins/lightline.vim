@@ -36,7 +36,7 @@ endfunction
 
 function! LightlineFugitive()
   if &ft !~? 'vimfiler\|gundo' && exists('*fugitive#head')
-    return fugitive#head()
+    return '⭠ '.fugitive#head()
   else
     return ''
   endif
